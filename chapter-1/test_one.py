@@ -1,5 +1,5 @@
 import pytest
-import one_one
+import one
 
 
 @pytest.mark.parametrize("string", [
@@ -8,8 +8,8 @@ import one_one
     "foo"
 ])
 def test_non_unique(string):
-    assert one_one.isUnique(string) == False
-    assert one_one.isUniqueNoDataStructure(string) == False
+    assert one.isUnique(string) == False
+    assert one.isUniqueNoDataStructure(string) == False
 
 
 @pytest.mark.parametrize("string", [
@@ -18,5 +18,5 @@ def test_non_unique(string):
     "coding"
 ])
 def test_unique(string):
-    assert one_one.isUnique(string) == True
-    assert one_one.isUniqueNoDataStructure(string) == True
+    assert one.isUnique(string) == True
+    assert one.isUniqueNoDataStructure(string) == True
